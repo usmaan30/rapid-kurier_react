@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center px-4 md:px-6  lg:px-12">
+    <nav className="flex justify-between bg-[#f0f0f0] shadow-md items-center px-4 md:px-6  lg:px-12 h-[18vh]">
       <img className="cursor-pointer h-28 w-32" src={logo} alt="logo image" />
 
       <ul className="md:flex hidden">
