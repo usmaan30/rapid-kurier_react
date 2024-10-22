@@ -1,5 +1,7 @@
 import bgImage from "../assets/pexels2.jpg";
 
+import { IoMdArrowDropright } from "react-icons/io";
+
 const Hero = () => {
   return (
     <section
@@ -13,8 +15,9 @@ const Hero = () => {
         <p className="text-lg p-3">
           Reliable, Fast, and Affordable Delivery Solutions
         </p>
-        <button className="bg-[#f39c12] p-2 m-2 rounded-md">
+        <button className="flex items-center bg-[#f39c12] text-lg py-2 px-4 m-2 rounded-md group hover:bg-[#e67e22] cursor-pointer">
           Our Services
+          <IoMdArrowDropright className="text-2xl transition-transform duration-300 group-hover:rotate-90" />
         </button>
       </div>
     </section>

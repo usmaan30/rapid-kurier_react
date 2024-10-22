@@ -6,14 +6,16 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="flex justify-between items-center bg-[#333] text-[#ffffff] px-8 py-6">
-      <div className="flex pl-8">
+    <section className="flex flex-col md:flex-row justify-between items-center bg-[#333] text-[#ffffff] px-8 py-6">
+      <div className="flex mb-4 md:mb-0 md:pl-8 justify-center md:justify-start">
         <FaFacebookF className="mx-3 text-2xl" />
         <FaInstagram className="mx-3 text-2xl" />
         <FaLinkedinIn className="mx-3 text-2xl" />
         <FaXTwitter className="mx-3 text-2xl" />
       </div>
-      <div className="pr-8">© 2024 Courier Company. All rights reserved.</div>
+      <div className="md:pr-8 text-center md:text-right">
+        © 2024 Courier Company. All rights reserved.
+      </div>
     </section>
   );
 };

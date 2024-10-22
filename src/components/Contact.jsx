@@ -5,13 +5,16 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <section className="bg-[#384D3A] text-center p-8">
+    <section className="bg-[#384D3A] text-center p-2 sm:p-8">
       <h1 className="text-4xl text-[#ffffff] p-4 font-bold">Get in Touch</h1>
       <p className="text-white">
         Feel free to reach out to us for any inquiries or support.
       </p>
-      <div className="flex justify-around items-center py-10 w-full">
-        <form action="" className="flex flex-col justify-center w-[40%]">
+      <div className="flex flex-col md:flex-row justify-around items-center py-10 w-full">
+        <form
+          action=""
+          className="flex flex-col justify-center w-[90%] md:w-[40%]"
+        >
           <label className="text-white mb-1 font-semibold text-left">
             Name
           </label>
@@ -40,12 +43,12 @@ const Contact = () => {
             required
             className="mb-4 rounded-md w-full py-2 px-3"
           ></textarea>
-          <button className="bg-[#f39c12] mb-2 rounded-md w-[30%] self-end p-2">
-            Send Message
+          <button className="bg-[#f39c12] text-[#ffffff] mb-2 rounded-md w-[25%] min-w-16 p-2 hover:bg-[#e67e22] self-end cursor-pointer">
+            Submit
           </button>
         </form>
-        <div className="absolute h-[50%] w-0.5 bg-[#f39c12] left-1/2 transform -translate-x-1/2"></div>
-        <div className="flex flex-col justify-center items-start text-white w-[40%] pl-6">
+        <div className="absolute md:h-[30%] lg:h-[40%] w-0.5 bg-[#f39c12] left-1/2 transform -translate-x-1/2 m-2"></div>
+        <div className="flex flex-col justify-center items-start text-white w-[90%] mt-4 md:w-[40%] ">
           <p className="inline-flex items-center mb-3 leading-normal">
             <MdEmail className="text-[#f39c12] mr-2 text-2xl" />
             info@rapidkuriergmbh.de
