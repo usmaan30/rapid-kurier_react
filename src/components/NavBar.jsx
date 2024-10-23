@@ -14,7 +14,7 @@ const NavBar = () => {
     setNav(false); // Close the nav when a link is clicked
   };
   return (
-    <nav className="fixed top-0 w-full flex justify-between z-10 bg-[#f0f0f0] shadow-md items-center px-4 md:px-6  lg:px-12 h-[18vh] 2xl:px-16 xl:text-xl 2xl:text-2xl">
+    <nav className="sticky top-0 w-full flex justify-between z-10 bg-[#f0f0f0] shadow-md items-center px-4 md:px-6  lg:px-12 h-[18vh] 2xl:px-16 xl:text-xl 2xl:text-2xl">
       <img className="cursor-pointer h-28 w-32" src={logo} alt="logo image" />
 
       <ul className="md:flex hidden">
