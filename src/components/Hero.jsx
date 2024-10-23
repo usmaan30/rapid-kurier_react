@@ -1,5 +1,6 @@
 import bgImage from "../assets/pexels2.jpg";
 import banner from "../assets/banner.jpg";
+import { Link } from "react-router-dom";
 
 import { IoMdArrowDropright } from "react-icons/io";
 
@@ -13,10 +14,13 @@ const Hero = () => {
         <p className="text-lg text-black py-3 xl:text-2xl text-left">
           Reliable, Fast, and Affordable Delivery Solutions
         </p>
-        <button className="absolute top-[55%] md:static flex items-center bg-[#f39c12] text-lg xl:text-xl py-2 px-4 rounded-md group hover:bg-[#e67e22] cursor-pointer">
+        <Link
+          to="/services"
+          className="absolute top-[55%] md:static flex items-center bg-[#f39c12] text-lg xl:text-xl py-2 px-4 rounded-md group hover:bg-[#e67e22] cursor-pointer"
+        >
           OUR SERVICES
           <IoMdArrowDropright className="text-2xl transition-transform duration-300 group-hover:rotate-90" />
-        </button>
+        </Link>
       </div>
       <img
         src={banner}
