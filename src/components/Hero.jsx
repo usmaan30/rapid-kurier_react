@@ -14,9 +14,14 @@ const Hero = () => {
         <p className="text-lg text-black py-8 xl:text-2xl text-left md:py-4">
           Reliable, Fast, and Affordable Delivery Solutions
         </p>
+        <ul className="text-black self-start py-4 text-left">
+          <li>Customer first</li>
+          <li>People led</li>
+          <li>Innovation driven</li>
+        </ul>
         <Link
           to="/services"
-          className="absolute top-[60%] md:static flex items-center bg-[#f39c12] text-lg xl:text-xl py-2 px-4 rounded-md group hover:bg-[#e67e22] cursor-pointer"
+          className="absolute top-[70%] md:static flex items-center bg-[#f39c12] text-lg xl:text-xl py-2 px-4 rounded-md group hover:bg-[#e67e22] cursor-pointer"
         >
           OUR SERVICES
           <IoMdArrowDropright className="text-2xl transition-transform duration-300 group-hover:rotate-90" />
