@@ -17,43 +17,37 @@ const NavBar = () => {
 
       <ul className="md:flex hidden">
         <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/">Home</Link>
         </li>
         <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/services">Services</Link>
         </li>
         <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/team">Team</Link>
         </li>
         <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
-        </li>
-        <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
 
-      <div className="md:hidden z-10 cursor-pointer" onClick={handleNav}>
+      <div className="md:hidden z-20 cursor-pointer" onClick={handleNav}>
         {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
       </div>
 
       <ul
-        className={`absolute top-0 left-0 w-full h-screen bg-white flex flex-col justify-center items-center transition-transform duration-300 ease-in-out ${nav ? "translate-x-0" : "-translate-x-full"}`}
+        className={`absolute top-0 left-0 w-full h-screen z-10 bg-white flex flex-col justify-center items-center transition-transform duration-300 ease-in-out ${nav ? "translate-x-0" : "-translate-x-full"}`}
       >
         <li className="px-4 py-2 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/">Home</Link>
         </li>
         <li className="px-4 py-2 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/services">Services</Link>
         </li>
         <li className="px-4 py-2 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/team">Team</Link>
         </li>
         <li className="px-4 py-2 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
-        </li>
-        <li className="px-4 py-2 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          Home
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

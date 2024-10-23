@@ -1,4 +1,5 @@
-import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar"; // Adjust based on your file structure
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Team from "./components/Team";
@@ -7,14 +8,27 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Hero />
-      <Services />
-      <Team />
-      <Contact />
+    <Router>
+      <NavBar /> {/* Navbar stays consistent across all routes */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Services />
+              <Team />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+      {/* Footer can stay outside the Routes as it's not a separate page */}
+    </Router>
   );
 }
 
