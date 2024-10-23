@@ -1,7 +1,7 @@
 import bgImage from "../assets/pexels2.jpg";
 import banner from "../assets/banner.jpg";
 import { Link } from "react-router-dom";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 import { IoMdArrowDropright } from "react-icons/io";
 
 const Hero = () => {
@@ -15,9 +15,18 @@ const Hero = () => {
           Reliable, Fast, and Affordable Delivery Solutions
         </p>
         <ul className="text-black self-start py-4 text-left">
-          <li>Customer first</li>
-          <li>People led</li>
-          <li>Innovation driven</li>
+          <li className="flex items-center">
+            <FaArrowRightLong className="pr-1" />
+            Customer first
+          </li>
+          <li className="flex items-center">
+            <FaArrowRightLong className="pr-1" />
+            People led
+          </li>
+          <li className="flex items-center">
+            <FaArrowRightLong className="pr-1" />
+            Innovation driven
+          </li>
         </ul>
         <Link
           to="/services"
