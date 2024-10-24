@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <section className="bg-[#384D3A] text-center p-2 sm:p-8">
+    <section className="bg-[#384D3A] text-center p-2 sm:p-8 min-h-[82vh]">
       <h1 className="text-4xl text-[#ffffff] p-4 font-bold">Get in Touch</h1>
       <p className="text-white">
         Feel free to reach out to us for any inquiries or support.

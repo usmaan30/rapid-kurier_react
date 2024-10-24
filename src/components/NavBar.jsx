@@ -18,16 +18,16 @@ const NavBar = () => {
       <img className="cursor-pointer h-28 w-32" src={logo} alt="logo image" />
 
       <ul className="md:flex hidden">
-        <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/">Home</Link>
         </li>
-        <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/services">Services</Link>
         </li>
-        <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/team">Team</Link>
         </li>
-        <li className="px-4 py-2 mx-4 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
