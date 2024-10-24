@@ -14,7 +14,7 @@ const Footer = () => {
         <FaXTwitter className="mx-3 text-2xl" />
       </div>
       <div className="md:pr-8 text-center md:text-right">
-        © 2024 Courier Company. All rights reserved.
+        © 2024 Rapid Kurier. All rights reserved.
       </div>
     </section>
   );

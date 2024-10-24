@@ -49,13 +49,19 @@ const Contact = () => {
         </form>
         <div className="absolute md:h-[30%] lg:h-[40%] w-0.5 bg-[#f39c12] left-1/2 transform -translate-x-1/2 m-2"></div>
         <div className="flex flex-col justify-center items-start text-white w-[90%] mt-4 md:w-[40%] ">
-          <p className="inline-flex items-center mb-3 leading-normal">
+          <a
+            href="mailto:info@rapidkuriergmbh.de"
+            className="inline-flex items-center mb-3 leading-normal"
+          >
             <MdEmail className="text-[#f39c12] mr-2 text-2xl" />
             info@rapidkuriergmbh.de
-          </p>
-          <p className="inline-flex items-center mb-3 leading-normal">
+          </a>
+          <a
+            href="tel:+49(0)1764731240"
+            className="inline-flex items-center mb-3 leading-normal"
+          >
             <FaPhone className="text-[#f39c12] mr-2 text-xl" /> +49(0)1764731240
-          </p>
+          </a>
           <p className="inline-flex items-center mb-4 leading-normal">
             <FaLocationDot className="text-[#f39c12] mr-2 text-xl" />{" "}
             Eisenstrasse 2-4, 65428 Russelsheim
