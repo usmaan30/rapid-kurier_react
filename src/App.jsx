@@ -5,10 +5,12 @@ import Services from "./components/Services";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar /> {/* Navbar stays consistent across all routes */}
       <Routes>
         <Route
