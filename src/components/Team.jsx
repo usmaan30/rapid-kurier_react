@@ -22,7 +22,7 @@ const Team = () => {
             className="rounded-full border-4 border-solid border-[#333] w-[180px] h-[180px]"
           />
           <h4 className="mt-[10px] mb-[5px] font-semibold">John Doe</h4>
-          <p>CEO</p>
+          <p>CTO</p>
         </div>
         <div className="my-4 mx-8 text-center">
           <img
