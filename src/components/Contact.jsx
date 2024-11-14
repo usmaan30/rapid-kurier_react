@@ -2,8 +2,31 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.init("JPkcsduha4um0Ax0Q"); // Initialize EmailJS with your User ID
+
+    const serviceID = "service_eojtu6x";
+    const templateID = "template_thg95ts";
+
+    emailjs
+      .sendForm(serviceID, templateID, form.current)
+      .then(() => {
+        alert("Message sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Failed to send message. Please try again.");
+      });
+  };
+
   return (
     <section className="bg-[#384D3A] text-center p-2 sm:p-8 min-h-[82vh]">
       <h1 className="text-4xl text-[#ffffff] p-4 font-bold">Get in Touch</h1>
@@ -12,7 +35,8 @@ const Contact = () => {
       </p>
       <div className="flex flex-col md:flex-row justify-around items-center py-10 w-full">
         <form
-          action=""
+          ref={form}
+          onSubmit={sendEmail}
           className="flex flex-col justify-center w-[90%] md:w-[40%]"
         >
           <label className="text-white mb-1 font-semibold text-left">
@@ -20,6 +44,7 @@ const Contact = () => {
           </label>
           <input
             type="text"
+            name="user_name"
             placeholder="Your Name"
             required
             className="mb-4 rounded-md w-full py-2 px-3"
@@ -29,6 +54,7 @@ const Contact = () => {
           </label>
           <input
             type="text"
+            name="user_email"
             placeholder="Your Email"
             required
             className="mb-4 rounded-md w-full py-2 px-3"
@@ -37,13 +63,16 @@ const Contact = () => {
             Message
           </label>
           <textarea
-            name=""
+            name="message"
             placeholder="Your message..."
             id=""
             required
             className="mb-4 rounded-md w-full py-2 px-3"
           ></textarea>
-          <button className="bg-[#f39c12] text-[#ffffff] mb-2 rounded-md w-[25%] min-w-16 p-2 hover:bg-[#e67e22] self-end cursor-pointer">
+          <button
+            type="submit"
+            className="bg-[#f39c12] text-[#ffffff] mb-2 rounded-md w-[25%] min-w-16 p-2 hover:bg-[#e67e22] self-end cursor-pointer"
+          >
             Submit
           </button>
         </form>
