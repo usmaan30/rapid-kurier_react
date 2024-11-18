@@ -14,7 +14,7 @@ const Team = () => {
             alt=""
             className="rounded-full border-4 border-solid border-[#333] w-[180px] h-[180px]"
           />
-          <h4 className="mt-[10px] mb-[5px] font-semibold">John Doe</h4>
+          <h4 className="mt-[10px] mb-[5px] font-semibold">Ali Khalid</h4>
           <p>CEO</p>
         </div>
         <div className="my-4 mx-8 text-center">
@@ -23,8 +23,8 @@ const Team = () => {
             alt=""
             className="rounded-full border-4 border-solid border-[#333] w-[180px] h-[180px]"
           />
-          <h4 className="mt-[10px] mb-[5px] font-semibold">John Doe</h4>
-          <p>COO</p>
+          <h4 className="mt-[10px] mb-[5px] font-semibold">Waleed Khalid</h4>
+          <p>HR and Accounting</p>
         </div>
         <div className="my-4 mx-8 text-center">
           <img

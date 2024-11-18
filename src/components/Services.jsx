@@ -5,7 +5,18 @@ const Services = () => {
     <section className="bg-[#384D3A] text-center p-8 min-h-[82vh]">
       <h1 className="text-4xl text-[#ffffff] p-4 font-bold">Our Services</h1>
       <div className="flex justify-around flex-wrap py-6">
-        <div className="bg-[#333] text-[#ffffff] w-80 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md ">
+        <div className="bg-[#333] text-[#ffffff] w-72 h-72 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md">
+          <h3 className="text-xl mb-3 text-[#f39c12] font-semibold">
+            Global Tracking
+          </h3>
+          <p>
+            Our GPS tracking solution provides global shipment tracking with
+            real-time updates, streamlining logistics processes across Europe.
+            It ensures seamless order management, enhanced communication,
+            transparency, and robust data protection.
+          </p>
+        </div>
+        <div className="bg-[#333] text-[#ffffff] w-72 h-72 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md ">
           <h3 className="text-xl mb-3 text-[#f39c12] font-semibold">
             Same Day Delivery
           </h3>
@@ -15,7 +26,7 @@ const Services = () => {
             ensuring speed and reliability for your time-sensitive needs.
           </p>
         </div>
-        <div className="bg-[#333] text-[#ffffff] w-80 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md ">
+        <div className="bg-[#333] text-[#ffffff] w-72 h-72 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md ">
           <h3 className="text-xl mb-3 text-[#f39c12] font-semibold">
             International Shipping
           </h3>
@@ -25,7 +36,7 @@ const Services = () => {
             your goods arrive safely at any destination around the world.
           </p>
         </div>
-        <div className="bg-[#333] text-[#ffffff] w-80 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md ">
+        <div className="bg-[#333] text-[#ffffff] w-72 h-72 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md ">
           <h3 className="text-xl mb-3 text-[#f39c12] font-semibold">
             Express Delivery
           </h3>

@@ -65,6 +65,9 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+          <Link to="/">About</Link>
+        </li>
+        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/services">Services</Link>
         </li>
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
@@ -147,6 +150,12 @@ const NavBar = () => {
           onClick={handleClose}
         >
           <Link to="/">Home</Link>
+        </li>
+        <li
+          className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"
+          onClick={handleClose}
+        >
+          <Link to="/">About</Link>
         </li>
         <li
           className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"

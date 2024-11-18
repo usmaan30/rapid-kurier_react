@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar"; // Adjust based on your file structure
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Services from "./components/Services";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
@@ -18,12 +19,14 @@ function App() {
           element={
             <>
               <Hero />
+              <About />
               <Services />
               <Team />
               <Contact />
             </>
           }
         />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
