@@ -1,17 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
-    <section>
-      Rapid Kurier GmbH, based in Rüsselsheim, is registered in the commercial
-      register with the legal form of a limited liability company. The company
-      is registered at the local court in 64283 Darmstadt under the commercial
-      register number HRB 105179. The company is economically active. The last
-      change in the commercial register was made on November 9th, 2023. The
-      company is currently run by a manager (1 x managing director). There is a
-      partner involved in the company. The company has one location.
+    <section className="bg-[#ffffff] text-center p-8">
+      <h1 className="text-4xl text-[#384D3A] p-4 font-bold">
+        {t("about.title")}
+      </h1>
+      <p className="text-lg text-left md:text-xl lg:text-2xl text-gray-800 leading-relaxed tracking-wide p-4 md:p-6 lg:p-8 border-l-4 border-[#f39c12] rounded-lg">
+        {t("about.description")}
+      </p>
     </section>
   );
 };
-
 export default About;

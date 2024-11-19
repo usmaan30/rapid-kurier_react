@@ -6,13 +6,17 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import GermanFlag from "../assets/germany.svg";
 import UkFlag from "../assets/uk.svg";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const location = useLocation();
   const navRef = useRef(null); // Ref for the nav
-  const [language, setLanguage] = useState("EN"); // Default language is English
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  // Ensure the language is synced with i18n.language
+  const language = i18n.language === "en" ? "EN" : "DE"; // Default to 'EN' or 'DE'
 
   const handleNav = () => {
     setNav(!nav);
@@ -50,31 +54,31 @@ const NavBar = () => {
   };
 
   const handleLanguageChange = (lang) => {
-    setLanguage(lang);
-    setIsDropdownOpen(false); // Close dropdown after selecting
+    i18n.changeLanguage(lang); // Change language
+    setIsDropdownOpen(false);
   };
 
   return (
-    <nav className="sticky top-0 w-full flex justify-between z-10 bg-[#f0f0f0] shadow-md items-center px-4 md:px-6  lg:px-12 h-[18vh] 2xl:px-16 xl:text-xl 2xl:text-2xl">
+    <nav className="sticky top-0 w-full flex justify-between z-10 bg-[#f0f0f0] shadow-md items-center px-4 md:px-6 lg:px-12 h-[18vh] 2xl:px-16 xl:text-xl 2xl:text-2xl">
       <Link to="/" onClick={handleLogoClick}>
         <img className="cursor-pointer h-28 w-32" src={logo} alt="logo image" />
       </Link>
 
       <ul className="md:flex hidden">
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          <Link to="/">Home</Link>
+          <Link to="/">{t("nav.home")}</Link>
         </li>
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          <Link to="/">About</Link>
+          <Link to="/about">{t("nav.about")}</Link>
         </li>
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          <Link to="/services">Services</Link>
+          <Link to="/services">{t("nav.services")}</Link>
         </li>
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          <Link to="/team">Team</Link>
+          <Link to="/team">{t("nav.team")}</Link>
         </li>
         <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">{t("nav.contact")}</Link>
         </li>
       </ul>
 
@@ -84,11 +88,10 @@ const NavBar = () => {
           className=" text-white py-2 px-4 flex items-center"
         >
           <img
-            src={language === "EN" ? UkFlag : GermanFlag} // Show the appropriate flag based on the selected language
-            alt={language === "EN" ? "English" : "German"}
+            src={i18n.language === "en" ? UkFlag : GermanFlag} // Show the appropriate flag based on the selected language
+            alt={i18n.language === "en" ? "English" : "German"}
             className="w-6 h-6 mr-2"
           />
-          {/* {language} Display the language identifier (EN or DE) */}
           <svg
             className="w-4 h-4 text-gray-800"
             fill="none"
@@ -108,10 +111,10 @@ const NavBar = () => {
         {isDropdownOpen && (
           <div className="absolute">
             <ul className="text-black">
-              {language !== "EN" && (
+              {i18n.language !== "en" && (
                 <li
                   className="px-4 hover:bg-gray-300 cursor-pointer"
-                  onClick={() => handleLanguageChange("EN")}
+                  onClick={() => handleLanguageChange("en")}
                 >
                   <img
                     src={UkFlag} // Use the UK flag SVG
@@ -120,10 +123,10 @@ const NavBar = () => {
                   />
                 </li>
               )}
-              {language !== "DE" && (
+              {i18n.language !== "de" && (
                 <li
                   className="px-4 hover:bg-gray-300 cursor-pointer"
-                  onClick={() => handleLanguageChange("DE")}
+                  onClick={() => handleLanguageChange("de")}
                 >
                   <img
                     src={GermanFlag} // Use the German flag SVG
@@ -149,31 +152,31 @@ const NavBar = () => {
           className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"
           onClick={handleClose}
         >
-          <Link to="/">Home</Link>
+          <Link to="/">{t("nav.home")}</Link>
         </li>
         <li
           className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"
           onClick={handleClose}
         >
-          <Link to="/">About</Link>
+          <Link to="/about">{t("nav.about")}</Link>
         </li>
         <li
           className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"
           onClick={handleClose}
         >
-          <Link to="/services">Services</Link>
+          <Link to="/services">{t("nav.services")}</Link>
         </li>
         <li
           className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"
           onClick={handleClose}
         >
-          <Link to="/team">Team</Link>
+          <Link to="/team">{t("nav.team")}</Link>
         </li>
         <li
           className="p-4 text-4xl cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150"
           onClick={handleClose}
         >
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">{t("nav.contact")}</Link>
         </li>
       </ul>
     </nav>

@@ -4,8 +4,10 @@ import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,10 +31,10 @@ const Contact = () => {
 
   return (
     <section className="bg-[#384D3A] text-center p-2 sm:p-8 min-h-[82vh]">
-      <h1 className="text-4xl text-[#ffffff] p-4 font-bold">Get in Touch</h1>
-      <p className="text-white">
-        Feel free to reach out to us for any inquiries or support.
-      </p>
+      <h1 className="text-4xl text-[#ffffff] p-4 font-bold">
+        {t("contact.title")}
+      </h1>
+      <p className="text-white">{t("contact.titleline")}</p>
       <div className="flex flex-col md:flex-row justify-around items-center py-10 w-full">
         <form
           ref={form}
@@ -40,31 +42,31 @@ const Contact = () => {
           className="flex flex-col justify-center w-[90%] md:w-[40%]"
         >
           <label className="text-white mb-1 font-semibold text-left">
-            Name
+            {t("contact.namelabel")}
           </label>
           <input
             type="text"
             name="user_name"
-            placeholder="Your Name"
+            placeholder={t("contact.namefield")}
             required
             className="mb-4 rounded-md w-full py-2 px-3"
           />
           <label className="text-white mb-1 font-semibold text-left">
-            Email
+            {t("contact.emaillabel")}
           </label>
           <input
             type="text"
             name="user_email"
-            placeholder="Your Email"
+            placeholder={t("contact.emailfield")}
             required
             className="mb-4 rounded-md w-full py-2 px-3"
           />
           <label className="text-white mb-1 font-semibold text-left">
-            Message
+            {t("contact.messagelabel")}
           </label>
           <textarea
             name="message"
-            placeholder="Your message..."
+            placeholder={t("contact.messagefield")}
             id=""
             required
             className="mb-4 rounded-md w-full py-2 px-3"
@@ -73,7 +75,7 @@ const Contact = () => {
             type="submit"
             className="bg-[#f39c12] text-[#ffffff] mb-2 rounded-md w-[25%] min-w-16 p-2 hover:bg-[#e67e22] self-end cursor-pointer"
           >
-            Submit
+            {t("contact.submitbutton")}
           </button>
         </form>
         <div className="absolute md:h-[30%] lg:h-[40%] w-0.5 bg-[#f39c12] left-1/2 transform -translate-x-1/2 m-2"></div>

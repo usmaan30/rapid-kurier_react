@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "team": "Team",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "welcomeMessage": "Willkommen bei ",
+    "slogan": "Zuverlässige, schnelle und erschwingliche Lieferlösungen",
+    "features": {
+      "customerFirst": "Kunde zuerst",
+      "peopleLed": "Menschen geführt",
+      "innovationDriven": "Innovationsgetrieben"
+    },
+    "ourServices": "UNSERE DIENSTLEISTUNGEN"
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Rapid Kurier GmbH mit Sitz in Rüsselsheim ist im Handelsregister mit der Rechtsform Gesellschaft mit beschränkter Haftung eingetragen. Das Unternehmen wird beim Amtsgericht 64283 Darmstadt unter der Handelsregister-Nummer HRB 105179 geführt. Das Unternehmen ist wirtschaftsaktiv. Die letzte Änderung im Handelsregister wurde am 09.11.2023 vorgenommen. Das Unternehmen wird derzeit von einem Manager ( 1 x Geschäftsführer) geführt. Es ist ein Gesellschafter an der Unternehmung beteiligt. Das Unternehmen verfügt über einen Standort."
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "s1": "Globales Tracking",
+    "s1description": "Unsere GPS-Tracking-Lösung ermöglicht eine globale Sendungsverfolgung mit Echtzeit-Updates und optimiert so die Logistikprozesse in ganz Europa. Es sorgt für eine reibungslose Auftragsverwaltung, verbesserte Kommunikation, Transparenz und einen robusten Datenschutz.",
+    "s2": "Lieferung am selben Tag",
+    "s2description": "Für dringende Lieferungen ist unser Same-Day-Shipping-Service die perfekte Lösung. Wir holen Ihre Pakete noch am selben Tag ab und liefern sie zu. So gewährleisten wir Schnelligkeit und Zuverlässigkeit für Ihre zeitkritischen Anforderungen.",
+    "s3": "Internationaler Versand",
+    "s3description": "Erweitern Sie Ihr Geschäft über die Grenzen hinaus mit unserem internationalen Versandservice. Wir kümmern uns um den Zoll, sorgen für eine weltweite Sendungsverfolgung und sorgen dafür, dass Ihre Waren sicher an jedem Zielort auf der Welt ankommen.",
+    "s4": "Express-Lieferung",
+    "s4description": "Möchten Sie, dass Ihr Paket in Rekordzeit geliefert wird? Unser Express-Lieferservice stellt sicher, dass Ihre Sendungen schnellstmöglich ihr Ziel erreichen, mit Echtzeitverfolgung und garantierten Lieferzeiten."
+  },
+  "team": {
+    "title": "Lernen Sie unser Team kennen",
+    "member1": "CEO",
+    "member2": "Personalwesen, Buchhaltung",
+    "member3": "CTO"
+  },
+  "contact": {
+    "title": "Nehmen Sie Kontakt auf",
+    "titleline": "Bei Fragen oder Unterstützung können Sie sich gerne an uns wenden.",
+    "namelabel": "Name",
+    "namefield": "Ihr Name",
+    "emaillabel": "E-Mail",
+    "emailfield": "Ihre E-Mail",
+    "messagelabel": "Nachricht",
+    "messagefield": "Ihre Nachricht...",
+    "submitbutton": "Einreichen"
+  },
+  "footer": {
+    "copyrightline": "© 2024 Rapid Kurier. Alle Rechte vorbehalten."
+  }
+}

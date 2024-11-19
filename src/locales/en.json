@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcomeMessage": "Welcome to ",
+    "slogan": "Reliable, Fast, and Affordable Delivery Solutions",
+    "features": {
+      "customerFirst": "Customer first",
+      "peopleLed": "People led",
+      "innovationDriven": "Innovation driven"
+    },
+    "ourServices": "OUR SERVICES"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Rapid Kurier GmbH, based in Rüsselsheim, is registered in the commercial register with the legal form of a limited liability company. The company is registered at the local court in 64283 Darmstadt under the commercial register number HRB 105179. The company is economically active. The last change in the commercial register was made on November 9th, 2023. The company is currently run by a manager (1 x managing director). There is a partner involved in the company. The company has one location."
+  },
+  "services": {
+    "title": "Our Services",
+    "s1": "Global Tracking",
+    "s1description": "Our GPS tracking solution provides global shipment tracking with real-time updates, streamlining logistics processes across Europe. It ensures seamless order management, enhanced communication, transparency, and robust data protection.",
+    "s2": "Same Day Delivery",
+    "s2description": "For urgent deliveries, our Same-Day Shipping service is the perfect solution. We pick up and deliver your parcels on the same day, ensuring speed and reliability for your time-sensitive needs.",
+    "s3": "International Shipping",
+    "s3description": "Expand your business beyond borders with our International Shipping service. We handle customs, provide global tracking, and ensure that your goods arrive safely at any destination around the world.",
+    "s4": "Express Delivery",
+    "s4description": "Need your package delivered in record time? Our Express Delivery service ensures that your shipments reach their destination as quickly as possible, with real-time tracking and guaranteed delivery times."
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "member1": "CEO",
+    "member2": "HR and Accounting",
+    "member3": "CTO"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "titleline": "Feel free to reach out to us for any inquiries or support.",
+    "namelabel": "Name",
+    "namefield": "Your Name",
+    "emaillabel": "Email",
+    "emailfield": "Your Email",
+    "messagelabel": "Message",
+    "messagefield": "Your message...",
+    "submitbutton": "Submit"
+  },
+  "footer": {
+    "copyrightline": "© 2024 Rapid Kurier. All rights reserved."
+  }
+}
