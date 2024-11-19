@@ -9,7 +9,7 @@ const Services = () => {
         {t("services.title")}
       </h1>
       <div className="flex justify-around flex-wrap py-6">
-        <div className="bg-[#333] text-[#ffffff] w-72 h-72 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md overflow-auto">
+        <div className="bg-[#333] text-[#ffffff] w-72 h-72 rounded-xl m-3 p-5 text-center border-2 border-solid border-[#f39c12] shadow-md">
           <h3 className="text-xl mb-3 text-[#f39c12] font-semibold">
             {t("services.s1")}
           </h3>
