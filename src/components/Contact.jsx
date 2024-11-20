@@ -46,7 +46,7 @@ const Contact = () => {
           </label>
           <input
             type="text"
-            name="user_name"
+            name="from_name"
             placeholder={t("contact.namefield")}
             required
             className="mb-4 rounded-md w-full py-2 px-3"
@@ -55,8 +55,8 @@ const Contact = () => {
             {t("contact.emaillabel")}
           </label>
           <input
-            type="text"
-            name="user_email"
+            type="email"
+            name="from_email"
             placeholder={t("contact.emailfield")}
             required
             className="mb-4 rounded-md w-full py-2 px-3"
