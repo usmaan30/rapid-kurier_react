@@ -14,7 +14,11 @@ i18n
       en: { translation: enTranslations },
       de: { translation: deTranslations },
     },
-    fallbackLng: "en", // Fallback language if detection fails
+    fallbackLng: "de", // Fallback language if detection fails
+    detection: {
+      order: ["querystring", "cookie", "localStorage", "navigator", "htmlTag"], // Language detection order
+      caches: ["cookie", "localStorage"], // Persist language selection in cookie/localStorage
+    },
     interpolation: {
       escapeValue: false, // React already protects from XSS
     },

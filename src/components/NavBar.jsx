@@ -33,8 +33,13 @@ const NavBar = () => {
   // Close nav menu when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
+      if (
+        navRef.current &&
+        !navRef.current.contains(event.target) &&
+        isDropdownOpen
+      ) {
         setNav(false);
+        setIsDropdownOpen(false);
       }
     };
 
