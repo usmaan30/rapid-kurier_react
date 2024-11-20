@@ -41,6 +41,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="flex flex-col justify-center w-[90%] md:w-[40%]"
         >
+          <input type="hidden" name="to_name" value="Rapid Kurier team" />
           <label className="text-white mb-1 font-semibold text-left">
             {t("contact.namelabel")}
           </label>
