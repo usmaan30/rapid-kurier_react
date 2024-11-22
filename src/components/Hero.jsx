@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center md:items-start md:p-8 md:w-[50%]">
         <h1 className="text-4xl font-bold bg-[#384D3A] text-center md:text-left p-2 rounded-lg 2xl:text-6xl">
           {t("hero.welcomeMessage")}
-          <span className="text-[#f39c12]">Rapid Kurier</span>
+          <span className="text-[#f39c12]">Rapid Kurier Gmbh</span>
         </h1>
         <p className="text-lg text-black py-4 xl:text-2xl text-left">
           {t("hero.slogan")}
