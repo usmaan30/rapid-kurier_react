@@ -2,6 +2,7 @@ import React from "react";
 import DumyImg from "../assets/d.jpg";
 import CEO from "../assets/CEO.jpg";
 import COO from "../assets/COO.jpg";
+import { FaPhone } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const Team = () => {
@@ -20,6 +21,12 @@ const Team = () => {
           />
           <h4 className="mt-[10px] mb-[5px] font-semibold">Ali Khalid</h4>
           <p>{t("team.member1")}</p>
+          <a
+            href="tel:+4917680305910"
+            className="inline-flex items-center mb-3 leading-normal"
+          >
+            <FaPhone className="text-[#f39c12] mr-2 text-xl" /> +4917680305910
+          </a>
         </div>
         <div className="my-4 mx-8 text-center">
           <img
@@ -29,6 +36,12 @@ const Team = () => {
           />
           <h4 className="mt-[10px] mb-[5px] font-semibold">Waleed Khalid</h4>
           <p>{t("team.member2")}</p>
+          <a
+            href="tel:+4917624097567"
+            className="inline-flex items-center mb-3 leading-normal"
+          >
+            <FaPhone className="text-[#f39c12] mr-2 text-xl" /> +4917624097567
+          </a>
         </div>
         <div className="my-4 mx-8 text-center">
           <img
@@ -38,6 +51,9 @@ const Team = () => {
           />
           <h4 className="mt-[10px] mb-[5px] font-semibold">Matteo Martin</h4>
           <p>{t("team.member3")}</p>
+          <a href="" className="inline-flex items-center mb-3 leading-normal">
+            <FaPhone className="text-[#f39c12] mr-2 text-xl" /> ###
+          </a>
         </div>
       </div>
     </section>

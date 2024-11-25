@@ -74,7 +74,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-[#f39c12] text-[#ffffff] mb-2 rounded-md w-[25%] min-w-16 p-2 hover:bg-[#e67e22] self-end cursor-pointer"
+            className="bg-[#f39c12] text-[#ffffff] mb-2 rounded-md w-[30%] min-w-16 p-2 hover:bg-[#e67e22] self-end cursor-pointer"
           >
             {t("contact.submitbutton")}
           </button>
