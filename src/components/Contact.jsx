@@ -95,13 +95,15 @@ const Contact = () => {
             <FaPhone className="text-[#f39c12] mr-2 text-xl" /> +49(0)1764731240
           </a>
           <p className="inline-flex items-center mb-4 leading-normal">
-            <FaLocationDot className="text-[#f39c12] mr-2 text-xl" />{" "}
-            Eisenstrasse 2-4, 65428 Russelsheim
+            <FaLocationDot className="text-[#f39c12] mr-2 text-xl" />
+            Stahlstraße 42-44 <br /> 65428 Rüsselsheim
           </p>
           <div className="w-full h-[200px]">
             <iframe
               className="w-full h-full rounded-md"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.8564212885294!2d8.4194303!3d49.976551099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd9eb461633c4f%3A0x17f6abd77195df27!2sEisenstra%C3%9Fe%202-4%2C%2065428%20R%C3%BCsselsheim%20am%20Main%2C%20Germany!5e0!3m2!1sen!2s!4v1729530913153!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.9048820721014!2d8.422448575749444!3d49.975642321438244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd9eb6d66c63cb%3A0x9bcdada0e8100f89!2sStahlstra%C3%9Fe%2042-44%2C%2065428%20R%C3%BCsselsheim%20am%20Main%2C%20Germany!5e0!3m2!1sen!2s!4v1766934538365!5m2!1sen!2s"
+              width="600"
+              height="450"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

@@ -64,25 +64,25 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="sticky top-0 w-full flex justify-between z-10 bg-[#f0f0f0] shadow-md items-center px-4 md:px-6 lg:px-12 h-[18vh] 2xl:px-16 xl:text-xl 2xl:text-2xl">
+    <nav className="sticky top-0 w-full min-h-[120px] flex justify-between z-10 bg-[#f0f0f0] shadow-md items-center px-4 md:px-6 lg:px-12 h-[18vh] 2xl:px-16 xl:text-xl 2xl:text-2xl">
       <Link to="/" onClick={handleLogoClick}>
         <img className="cursor-pointer h-28 w-32" src={logo} alt="logo image" />
       </Link>
 
       <ul className="md:flex hidden">
-        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-3 lg:mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/">{t("nav.home")}</Link>
         </li>
-        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-3 lg:mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/about">{t("nav.about")}</Link>
         </li>
-        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-3 lg:mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/services">{t("nav.services")}</Link>
         </li>
-        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-3 lg:mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/team">{t("nav.team")}</Link>
         </li>
-        <li className="px-1 py-1 mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
+        <li className="px-1 py-1 mx-3 lg:mx-8 cursor-pointer capitalize font-medium text-[#417c4c] hover:scale-105 hover:text-[#033003] duration-150">
           <Link to="/contact">{t("nav.contact")}</Link>
         </li>
       </ul>

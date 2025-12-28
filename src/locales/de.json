@@ -18,7 +18,17 @@
   },
   "about": {
     "title": "Über uns",
-    "description": "Rapid Kurier GmbH mit Sitz in Rüsselsheim ist im Handelsregister mit der Rechtsform Gesellschaft mit beschränkter Haftung eingetragen. Das Unternehmen wird beim Amtsgericht 64283 Darmstadt unter der Handelsregister-Nummer HRB 105179 geführt. Das Unternehmen ist wirtschaftsaktiv. Die letzte Änderung im Handelsregister wurde am 09.11.2023 vorgenommen. Das Unternehmen wird derzeit von einem Manager ( 1 x Geschäftsführer) geführt. Es ist ein Gesellschafter an der Unternehmung beteiligt. Das Unternehmen verfügt über einen Standort."
+    "description": "Rapid Kurier GmbH mit Sitz in Rüsselsheim ist im Handelsregister mit der Rechtsform Gesellschaft mit beschränkter Haftung eingetragen. Das Unternehmen wird beim Amtsgericht 64283 Darmstadt unter der Handelsregister-Nummer HRB 105179 geführt. Das Unternehmen ist wirtschaftsaktiv. Die letzte Änderung im Handelsregister wurde am 09.11.2023 vorgenommen. Das Unternehmen wird derzeit von einem Manager ( 1 x Geschäftsführer) geführt. Es ist ein Gesellschafter an der Unternehmung beteiligt. Das Unternehmen verfügt über einen Standort.",
+    "certificates": {
+      "hellmann": {
+        "title": "Hellmann Worldwide Logistics",
+        "subtitle": "Zertifizierter Logistikpartner"
+      },
+      "pq": {
+        "title": "PQ KEP",
+        "subtitle": "Präqualifikation Kurier-, Express- und Paketdienste"
+      }
+    }
   },
   "services": {
     "title": "Unsere Leistungen",
